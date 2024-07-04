@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 public class main {
@@ -11,17 +10,20 @@ public class main {
 
         while (exit < 1) {
             
-            display.Menu();
+            String[] Books = {
+                "The Clockwork Angel","Frankenstien","The Dare","Stalking Jack the Ripper",
+                "Crazy Rich Asians","The Haunting","The Twin","Daughter of the Moon Godess",
+                "Daugter of the Moon Godess","Kept Secrets","The Outsiders","Pride and Prejudice","Beowulf"};
+
+            display.Menu(Books);
 
             String userinput = input.nextLine();
 
             switch (userinput) {
-                case "6":
-                    exit = 1;
-                    break;
+                case "6" -> exit = 1;
             
-                default:
-                    break;
+                default -> {
+                }
             }
 
         }
