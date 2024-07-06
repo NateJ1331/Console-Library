@@ -1,7 +1,6 @@
 import java.util.List;
-
 public class Display {
-    
+    //Displays Menu
     public void Menu()
     {
         System.out.println("   MENU   ");
@@ -13,17 +12,14 @@ public class Display {
         System.out.print("> ");
     }
 
-
+    // Displays Books
     public void Books(List<String> books)
     {   
         System.out.println();
         System.out.println("Books: ");
-
         for (String book : books) {
             System.out.println(book);
         }
         System.out.println();
-    }
-
-     
+    }   
 }
