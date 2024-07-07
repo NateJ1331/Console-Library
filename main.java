@@ -79,7 +79,7 @@ public class main {
                 {
                     System.out.println("What Book would you like to return? ");
                     String returnedBook = input.nextLine();
-                    if(Books.contains(returnedBook))
+                    if(CheckedOutBooks.contains(returnedBook))
                     {
                         CheckedOutBooks.remove(returnedBook);
                         Books.add(returnedBook);
